@@ -4,8 +4,16 @@
 <meta charset="utf-8">
 <title>文档标题</title>
 </head>
+<script>
+   const url = location.search; //获取url中"?"符后的字串
+	let newurl = "https://mzvlc.top/";
+	strs = url.split("?");
+	if(strs.length > 1){
+		newurl = newurl +"?" + strs[1]
+	}
+   window.location.href = newurl;
+</script>
 <body>
-	<h1>我的第一个HTML页面</h1>
-	<p>我的第一个段落。</p>
+	<h1>等待跳转中</h1>
 </body>
 </html>
